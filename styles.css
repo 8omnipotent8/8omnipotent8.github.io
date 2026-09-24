@@ -25,27 +25,40 @@ img{display:block;max-width:100%}
 .lightbox{width:min(94vw,1400px);height:min(92vh,900px);padding:0;border:0;border-radius:16px;background:#050811;box-shadow:0 30px 100px #000}.lightbox::backdrop{background:rgba(0,0,0,.82)}.lightbox img{width:100%;height:100%;object-fit:contain}.lightbox-close{position:absolute;right:12px;top:10px;width:42px;height:42px;border:0;border-radius:50%;background:rgba(10,15,28,.8);color:white;font-size:28px;cursor:pointer}
 @media (max-width:900px){.hero-grid,.project,.about-grid{grid-template-columns:1fr}.hero-grid{gap:36px;padding:58px 0 72px}.hero-card{max-width:560px}.project{gap:28px}.gallery{order:2}.about-grid{gap:24px}.nav-links a:not(:last-child){display:none}}
 @media (max-width:600px){.container{width:min(var(--max),calc(100% - 26px))}.hero h1{font-size:39px}.lead{font-size:17px}.hero-card{grid-template-columns:1fr 1fr}.hero-card div{padding:17px}.section{padding:64px 0}.project{padding:34px 0}.project h3{font-size:25px}.gallery,.gallery-3{grid-template-columns:1fr}.shot.wide{grid-column:span 1}.phone-gallery{grid-template-columns:1fr}.footer-row{align-items:flex-start;flex-direction:column}.nav{height:64px}}
-/* Компактная галерея скриншотов на компьютере */
+/* Галерея Blueprint — заполняет высоту блока без пустоты снизу */
 @media (min-width: 901px) {
-  .gallery {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  .project.featured .gallery-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
+
+    align-self: stretch;
+    align-content: stretch;
   }
 
-  .gallery .shot,
-  .gallery .shot.wide {
+  .project.featured .gallery-3 .shot,
+  .project.featured .gallery-3 .shot.wide {
     grid-column: span 1;
-    height: 150px;
+    height: auto;
     min-height: 0;
   }
 
-  .gallery .shot img {
+  .project.featured .gallery-3 .shot img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 
-  /* Скриншоты мобильных приложений */
+
+  /* Остальные обычные галереи */
+  .gallery:not(.gallery-3):not(.phone-gallery) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+
+  /* Мобильные приложения */
   .phone-gallery {
     grid-template-columns: repeat(2, 180px);
     justify-content: center;
