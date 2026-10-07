@@ -1,0 +1,203 @@
+{
+  "name": "Крым",
+  "version": "2026-10-01",
+  "size": 160916779,
+  "sha256": "82e62780130788b0b85bbbe613053ac6ea9d17e797ec41d0bd84cc1f211ebf78",
+  "parts": [
+    {
+      "url": "/ugodya/maps/crimea-000.bin",
+      "size": 4194304,
+      "sha256": "e6d0e8d25e4abc34cf94b728c9ef5c4c3317ac2bf7e73aced490d6d781b4000b"
+    },
+    {
+      "url": "/ugodya/maps/crimea-001.bin",
+      "size": 4194304,
+      "sha256": "233b11977370f5a9a0cdebee9cf60ca2b4ebf9848ff3e793c9ea60d6773bbd81"
+    },
+    {
+      "url": "/ugodya/maps/crimea-002.bin",
+      "size": 4194304,
+      "sha256": "217e2ef989cc2d102dc2f5e7ce6d1c24a3c6031a4b0f2e68fa6aa56a09ebda04"
+    },
+    {
+      "url": "/ugodya/maps/crimea-003.bin",
+      "size": 4194304,
+      "sha256": "85cbbaeca90bd1c43e0a95f20a398f94718dd07d29c7faafd155bbd6a38a50c5"
+    },
+    {
+      "url": "/ugodya/maps/crimea-004.bin",
+      "size": 4194304,
+      "sha256": "ff96c6f674b3a842ca973add0ddd87fa096a30a67421e5095504c90c2ad291a1"
+    },
+    {
+      "url": "/ugodya/maps/crimea-005.bin",
+      "size": 4194304,
+      "sha256": "fbe4774c0943c1bd233889f1e17714791baff9538b05eb55d2477865088b3aa9"
+    },
+    {
+      "url": "/ugodya/maps/crimea-006.bin",
+      "size": 4194304,
+      "sha256": "2e04fad7c7156defea39d8ccf753f57b3c099aa15a045cc9534f42c7441ef460"
+    },
+    {
+      "url": "/ugodya/maps/crimea-007.bin",
+      "size": 4194304,
+      "sha256": "e0da42e99b9c42c36618f2284bdd3743278b9c218c9ed5b73ece2d5d2bdd3364"
+    },
+    {
+      "url": "/ugodya/maps/crimea-008.bin",
+      "size": 4194304,
+      "sha256": "6e9efcc30ef3cd88e002452794f9a680115e9056ad8f3e4984dea113661e31c2"
+    },
+    {
+      "url": "/ugodya/maps/crimea-009.bin",
+      "size": 4194304,
+      "sha256": "acbb5659fe7ad532a83fd3feb55e1c1b003a83306d94a02e4866efa993b1b508"
+    },
+    {
+      "url": "/ugodya/maps/crimea-010.bin",
+      "size": 4194304,
+      "sha256": "60908fa78711e72798c658737703a5e886f43548c7c4de47e63afaffdc844ebe"
+    },
+    {
+      "url": "/ugodya/maps/crimea-011.bin",
+      "size": 4194304,
+      "sha256": "11c8d350287a812405d5838babbab6ede281b5893d9a9132ffad50bdaafe1069"
+    },
+    {
+      "url": "/ugodya/maps/crimea-012.bin",
+      "size": 4194304,
+      "sha256": "c080158e7666dc97efa1491a4d14348ac44dc4ca398536c832e2f31490844271"
+    },
+    {
+      "url": "/ugodya/maps/crimea-013.bin",
+      "size": 4194304,
+      "sha256": "c76e96eb040e81157f4189636efa8b1c4792879a67552ef054fdaa8aa4fe7537"
+    },
+    {
+      "url": "/ugodya/maps/crimea-014.bin",
+      "size": 4194304,
+      "sha256": "aa11e6b7823f77a63cc297333c4a546680280c4d2a3f016b07ffb8bfaa8c9fdc"
+    },
+    {
+      "url": "/ugodya/maps/crimea-015.bin",
+      "size": 4194304,
+      "sha256": "9aaac553e091909b890e52fe300a3b57622338518a4b3294debca030b479d04a"
+    },
+    {
+      "url": "/ugodya/maps/crimea-016.bin",
+      "size": 4194304,
+      "sha256": "32aefe2c5036dba0daa9984c1338bc9566517502244d147c78c3b004b491c2fe"
+    },
+    {
+      "url": "/ugodya/maps/crimea-017.bin",
+      "size": 4194304,
+      "sha256": "4b682a4358affef94290533aefd77193fa3300854856e636c7ae450f06b84851"
+    },
+    {
+      "url": "/ugodya/maps/crimea-018.bin",
+      "size": 4194304,
+      "sha256": "33ab083894728737825d2c17d33261550ca3c39bdc7f0f0c6262fd5eb6948281"
+    },
+    {
+      "url": "/ugodya/maps/crimea-019.bin",
+      "size": 4194304,
+      "sha256": "131e715140ac05a81de9c55acb9201140db80da8cd106db44d690e14cb73367f"
+    },
+    {
+      "url": "/ugodya/maps/crimea-020.bin",
+      "size": 4194304,
+      "sha256": "ad74b221ea572bf001f29656bb8b524901a1f9b21ae986faeabe95475e6a5347"
+    },
+    {
+      "url": "/ugodya/maps/crimea-021.bin",
+      "size": 4194304,
+      "sha256": "15497d72bac1d8d0f9dd9e4166945e8478eeee4416a16d63cb1411cd8f9dc79b"
+    },
+    {
+      "url": "/ugodya/maps/crimea-022.bin",
+      "size": 4194304,
+      "sha256": "92e15d68c0777feae4785f7519d4912b4805c6e0832c8262ddc6f386b65826d8"
+    },
+    {
+      "url": "/ugodya/maps/crimea-023.bin",
+      "size": 4194304,
+      "sha256": "9b8ad9df1ecc51c752b5eab808be6816a3f66fe3bb9167611c5812e3ec2befe3"
+    },
+    {
+      "url": "/ugodya/maps/crimea-024.bin",
+      "size": 4194304,
+      "sha256": "95c47883dac7fa9c9e90b792b2d159ce7e6f5270d0b7a0894580a426247bfef9"
+    },
+    {
+      "url": "/ugodya/maps/crimea-025.bin",
+      "size": 4194304,
+      "sha256": "5541e2b9edc29f741dc343f7e65e44ab1e95167333d46efb4d10ab1ec45444aa"
+    },
+    {
+      "url": "/ugodya/maps/crimea-026.bin",
+      "size": 4194304,
+      "sha256": "78977c5f8c4850c9d670be0bc6d59759fa8b8f42cad3adecc467a4ff2c0f4d13"
+    },
+    {
+      "url": "/ugodya/maps/crimea-027.bin",
+      "size": 4194304,
+      "sha256": "1142c50deb5077e7f28b13d9034d4da4efb29e707b552d841cdc16e2bdfa5419"
+    },
+    {
+      "url": "/ugodya/maps/crimea-028.bin",
+      "size": 4194304,
+      "sha256": "338d1181848b409767ccff675911628be8065dc449f739c8d1e79045cc30371c"
+    },
+    {
+      "url": "/ugodya/maps/crimea-029.bin",
+      "size": 4194304,
+      "sha256": "6f7eeab374957ed93517f6b4ecadbc941eba48b39b70c89691d2ead138f12d12"
+    },
+    {
+      "url": "/ugodya/maps/crimea-030.bin",
+      "size": 4194304,
+      "sha256": "caadceeac2e80254c940e2d4fa1e76dcd592443a3501833c847cfa675e6fd9e1"
+    },
+    {
+      "url": "/ugodya/maps/crimea-031.bin",
+      "size": 4194304,
+      "sha256": "100afc8a1a893cde673ca0372b7f903454807a2d1a00c656978e9cf9b68ec806"
+    },
+    {
+      "url": "/ugodya/maps/crimea-032.bin",
+      "size": 4194304,
+      "sha256": "d3f5f91b6d488113d3c9d83c1a50a7a6767acacce8910d89839005331d865f55"
+    },
+    {
+      "url": "/ugodya/maps/crimea-033.bin",
+      "size": 4194304,
+      "sha256": "5d937dff9fcd3cae51dbdab2f91b32d07ff6bf7cf6fbb0685e270a6633aa6422"
+    },
+    {
+      "url": "/ugodya/maps/crimea-034.bin",
+      "size": 4194304,
+      "sha256": "b6a30989854ed63c1d6f13216b488cb7d0c700056ebfb48a598596b91ef3e640"
+    },
+    {
+      "url": "/ugodya/maps/crimea-035.bin",
+      "size": 4194304,
+      "sha256": "5fdb7373925dc9dd11d5cb3d6a06a4b8de79869e97a7db3bc9659085a9fa73a3"
+    },
+    {
+      "url": "/ugodya/maps/crimea-036.bin",
+      "size": 4194304,
+      "sha256": "bc1657b2c64f955ecfde6b54e9b74e30b86f1ea23274fc456e23b71092175c40"
+    },
+    {
+      "url": "/ugodya/maps/crimea-037.bin",
+      "size": 4194304,
+      "sha256": "36750c85f09c306fe92bbefa1d26af0fb70139a3d63efc4180b41ecba27b5866"
+    },
+    {
+      "url": "/ugodya/maps/crimea-038.bin",
+      "size": 1533227,
+      "sha256": "a360c6f024ff0978aff8ada66e66bf3d9b5e933db3156ea4a1a6d8a1a9bb8cce"
+    }
+  ]
+}

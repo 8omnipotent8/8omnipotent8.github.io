@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#f5f8ef" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="description"
+      content="Угодья: карта Крыма, территории, точки и маршруты без интернета"
+    />
+    <link rel="manifest" href="/ugodya/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/ugodya/branding/icon-192.png" />
+    <title>Угодья</title>
+    <script type="module" crossorigin src="/ugodya/assets/index-D2Nd0ZIr.js"></script>
+    <link rel="stylesheet" crossorigin href="/ugodya/assets/index-mLqqAVzX.css">
+  </head>
+  <body>
+    <div id="splash">
+      <img src="/ugodya/branding/splash_final.png" alt="" />
+      <h1>Угодья</h1>
+      <p>Карта, которая работает вместе с вами</p>
+    </div>
+    <div id="app">
+      <header>
+        <button id="menu" aria-label="Открыть меню">☰</button>
+        <h1>Угодья</h1>
+        <button id="search" aria-label="Поиск">⌕</button
+        ><button id="sync" aria-label="Синхронизировать">↻</button>
+      </header>
+      <main id="map" aria-label="Карта Крыма"></main>
+      <div id="notice" role="status" hidden></div>
+      <div id="offline" hidden>
+        Нет интернета · работаем с сохранёнными данными
+      </div>
+      <div id="add-banner" hidden>
+        Нажмите на карту, чтобы поставить точку
+        <button id="cancel-add">Отмена</button>
+      </div>
+      <div class="bottom">
+        <section id="gps-panel" class="glass">
+          <button id="collapse" aria-label="Свернуть сведения">⌄</button>
+          <div id="gps-info">
+            <strong id="inside">Территории загружаются…</strong
+            ><strong id="distance">До ближайшей границы: —</strong
+            ><button id="copy-gps" class="text-button">
+              GPS: ожидание координат</button
+            ><small id="sync-info"
+              >Изменения сохраняются на этом устройстве</small
+            >
+          </div>
+        </section>
+        <div class="controls">
+          <button
+            id="add-point"
+            class="glass round"
+            aria-label="Добавить точку"
+          >
+            ✚</button
+          ><button id="locate" class="glass round" aria-label="Моя геопозиция">
+            ◎
+          </button>
+        </div>
+      </div>
+      <div id="track-banner" hidden></div>
+    </div>
+    <dialog id="sheet"><div id="sheet-content"></div></dialog>
+    <div id="toast" role="status"></div>
+  </body>
+</html>
