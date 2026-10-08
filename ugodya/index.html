@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <meta name="theme-color" content="#f5f8ef" />
+    <meta name="theme-color" content="#173d2e" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta
@@ -16,12 +16,12 @@
     <link rel="manifest" href="/ugodya/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/ugodya/branding/icon-192.png" />
     <title>Угодья</title>
-    <script type="module" crossorigin src="/ugodya/assets/index-BqX34PFD.js"></script>
-    <link rel="stylesheet" crossorigin href="/ugodya/assets/index-BK9YMT3b.css">
+    <script type="module" crossorigin src="/ugodya/assets/index-BXuvU2oC.js"></script>
+    <link rel="stylesheet" crossorigin href="/ugodya/assets/index-rKphc1V7.css">
   </head>
   <body>
     <div id="splash">
-      <img src="/ugodya/branding/splash_final.png" alt="" />
+      <div class="brand-orb"><img class="brand-globe" src="/ugodya/branding/splash_globe.png" alt=""><img class="brand-pin" src="/ugodya/branding/splash_pin.png" alt=""></div>
       <h1>Угодья</h1>
       <p>Карта, которая работает вместе с вами</p>
     </div>
@@ -34,6 +34,8 @@
         ><button id="sync" aria-label="Синхронизировать">↻</button>
       </header>
       <main id="map" aria-label="Карта Крыма"></main>
+      <div id="map-modes" class="glass" role="group" aria-label="Вид карты"><button id="mode-scheme" aria-pressed="true">Схема</button><button id="mode-satellite" aria-pressed="false">Спутник</button></div>
+      <div class="map-banners">
       <div id="notice" role="status" hidden></div>
       <div id="offline" hidden>
         Нет интернета · работаем с сохранёнными данными
@@ -41,6 +43,9 @@
       <div id="add-banner" hidden>
         Нажмите на карту, чтобы поставить точку
         <button id="cancel-add">Отмена</button>
+      </div>
+      <div id="track-banner" hidden></div>
+      <div id="download-banner" hidden><span id="download-summary"></span><button id="download-details" aria-label="Открыть загрузку карты">Подробнее</button></div>
       </div>
       <div class="bottom">
         <section id="gps-panel" class="glass">
@@ -67,8 +72,8 @@
           </button>
         </div>
       </div>
-      <div id="track-banner" hidden></div>
     </div>
+    <dialog id="onboarding" hidden aria-label="Знакомство с Угодьями"></dialog>
     <dialog id="sheet"><div id="sheet-content"></div></dialog>
     <div id="toast" role="status" hidden></div>
   </body>
