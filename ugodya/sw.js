@@ -1,11 +1,13 @@
-const SHELL = "ugodya-pages-shell-034-135089033531",
+const SHELL = "ugodya-pages-shell-035-b74de3056908",
   SATELLITE = "ugodya-pages-satellite-v1";
-const PRECACHE = ["/ugodya/assets/index-D2Nd0ZIr.js","/ugodya/assets/index-mLqqAVzX.css","/ugodya/branding/icon-192.png","/ugodya/branding/icon-512.png","/ugodya/branding/splash_background.png","/ugodya/branding/splash_final.png","/ugodya/branding/splash_glint.png","/ugodya/branding/splash_globe.png","/ugodya/branding/splash_pin.png","/ugodya/data/bakhchisaray_2_3_276-U.geojson","/ugodya/data/crimea_places.json","/ugodya/data/partizan_276-U.geojson","/ugodya/data/yalta_forestry_1_2.geojson","/ugodya/fonts/Noto Sans Regular/0-255.pbf","/ugodya/fonts/Noto Sans Regular/1024-1279.pbf","/ugodya/fonts/Noto Sans Regular/256-511.pbf","/ugodya/fonts/Noto Sans Regular/768-1023.pbf","/ugodya/index.html","/ugodya/manifest.webmanifest","/ugodya/maps/catalog.json","/ugodya/styles/satellite.json","/ugodya/styles/scheme.json"];
+const PRECACHE = ["/ugodya/assets/index-BK9YMT3b.css","/ugodya/assets/index-BqX34PFD.js","/ugodya/branding/icon-192.png","/ugodya/branding/icon-512.png","/ugodya/branding/splash_background.png","/ugodya/branding/splash_final.png","/ugodya/branding/splash_glint.png","/ugodya/branding/splash_globe.png","/ugodya/branding/splash_pin.png","/ugodya/data/bakhchisaray_2_3_276-U.geojson","/ugodya/data/crimea_places.json","/ugodya/data/partizan_276-U.geojson","/ugodya/data/yalta_forestry_1_2.geojson","/ugodya/fonts/Noto Sans Regular/0-255.pbf","/ugodya/fonts/Noto Sans Regular/1024-1279.pbf","/ugodya/fonts/Noto Sans Regular/256-511.pbf","/ugodya/fonts/Noto Sans Regular/768-1023.pbf","/ugodya/index.html","/ugodya/manifest.webmanifest","/ugodya/maps/catalog.json","/ugodya/styles/satellite.json","/ugodya/styles/scheme.json"];
 self.addEventListener("install", (event) =>
   event.waitUntil(
     (async () => {
       const cache = await caches.open(SHELL);
       await cache.addAll(PRECACHE);
+      // Stored map chunks and account data are unchanged. New pages use the new shell.
+      await self.skipWaiting();
     })(),
   ),
 );

@@ -16,8 +16,8 @@
     <link rel="manifest" href="/ugodya/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/ugodya/branding/icon-192.png" />
     <title>Угодья</title>
-    <script type="module" crossorigin src="/ugodya/assets/index-D2Nd0ZIr.js"></script>
-    <link rel="stylesheet" crossorigin href="/ugodya/assets/index-mLqqAVzX.css">
+    <script type="module" crossorigin src="/ugodya/assets/index-BqX34PFD.js"></script>
+    <link rel="stylesheet" crossorigin href="/ugodya/assets/index-BK9YMT3b.css">
   </head>
   <body>
     <div id="splash">
@@ -25,7 +25,8 @@
       <h1>Угодья</h1>
       <p>Карта, которая работает вместе с вами</p>
     </div>
-    <div id="app">
+    <section id="auth-page" aria-label="Вход в Угодья" hidden></section>
+    <div id="app" hidden inert>
       <header>
         <button id="menu" aria-label="Открыть меню">☰</button>
         <h1>Угодья</h1>
@@ -69,6 +70,6 @@
       <div id="track-banner" hidden></div>
     </div>
     <dialog id="sheet"><div id="sheet-content"></div></dialog>
-    <div id="toast" role="status"></div>
+    <div id="toast" role="status" hidden></div>
   </body>
 </html>
