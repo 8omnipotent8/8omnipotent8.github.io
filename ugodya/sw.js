@@ -1,6 +1,6 @@
-const SHELL = "ugodya-pages-shell-038-ea98d72c5739",
+const SHELL = "ugodya-pages-shell-038-0d1a67f5842d",
   SATELLITE = "ugodya-pages-satellite-v1";
-const PRECACHE = ["/ugodya/assets/index-3Fp2Kwe2.js","/ugodya/assets/index-CP7-JPaN.css","/ugodya/branding/icon-192.png","/ugodya/branding/icon-512.png","/ugodya/branding/splash_background.png","/ugodya/branding/splash_final.png","/ugodya/branding/splash_glint.png","/ugodya/branding/splash_globe.png","/ugodya/branding/splash_pin.png","/ugodya/data/ai-petri.geojson","/ugodya/data/alma-kermen.geojson","/ugodya/data/bakhchisaray_2_3_276-U.geojson","/ugodya/data/crimean_loh_hanfield.geojson","/ugodya/data/crimea_places.json","/ugodya/data/kermen.geojson","/ugodya/data/krcrliso.geojson","/ugodya/data/lamat.geojson","/ugodya/data/oou-bakhchisaray1.geojson","/ugodya/data/partizan_276-U.geojson","/ugodya/data/partner-proekt.geojson","/ugodya/data/tyaga-service.geojson","/ugodya/data/vepr.geojson","/ugodya/data/yalta_forestry_1_2.geojson","/ugodya/fonts/Noto Sans Regular/0-255.pbf","/ugodya/fonts/Noto Sans Regular/1024-1279.pbf","/ugodya/fonts/Noto Sans Regular/256-511.pbf","/ugodya/fonts/Noto Sans Regular/768-1023.pbf","/ugodya/index.html","/ugodya/manifest.webmanifest","/ugodya/maps/catalog.json","/ugodya/styles/satellite.json","/ugodya/styles/scheme.json"];
+const PRECACHE = ["/ugodya/assets/index-BQ1E7q-M.css","/ugodya/assets/index-DsZFkjoY.js","/ugodya/boot-guard.js","/ugodya/branding/icon-192.png","/ugodya/branding/icon-512.png","/ugodya/branding/splash_background.png","/ugodya/branding/splash_final.png","/ugodya/branding/splash_glint.png","/ugodya/branding/splash_globe.png","/ugodya/branding/splash_pin.png","/ugodya/data/ai-petri.geojson","/ugodya/data/alma-kermen.geojson","/ugodya/data/bakhchisaray_2_3_276-U.geojson","/ugodya/data/crimean_loh_hanfield.geojson","/ugodya/data/crimea_places.json","/ugodya/data/kermen.geojson","/ugodya/data/krcrliso.geojson","/ugodya/data/lamat.geojson","/ugodya/data/oou-bakhchisaray1.geojson","/ugodya/data/partizan_276-U.geojson","/ugodya/data/partner-proekt.geojson","/ugodya/data/tyaga-service.geojson","/ugodya/data/vepr.geojson","/ugodya/data/yalta_forestry_1_2.geojson","/ugodya/fonts/Noto Sans Regular/0-255.pbf","/ugodya/fonts/Noto Sans Regular/1024-1279.pbf","/ugodya/fonts/Noto Sans Regular/256-511.pbf","/ugodya/fonts/Noto Sans Regular/768-1023.pbf","/ugodya/index.html","/ugodya/manifest.webmanifest","/ugodya/maps/catalog.json","/ugodya/styles/satellite.json","/ugodya/styles/scheme.json"];
 self.addEventListener("install", (event) =>
   event.waitUntil(
     (async () => {
@@ -61,6 +61,10 @@ self.addEventListener("fetch", (event) => {
     (async () => {
       const cache = await caches.open(SHELL);
       const saved = await cache.match(request, {ignoreVary:true});
+      if(request.mode==='navigate' && url.searchParams.has('recover')) {
+        try { const response=await fetch(request,{signal:AbortSignal.timeout(5000)});if(response.ok)return response; } catch {}
+        return saved ?? await cache.match('/ugodya/index.html',{ignoreVary:true});
+      }
       if (saved) return saved;
       try {
         return await fetch(request);
