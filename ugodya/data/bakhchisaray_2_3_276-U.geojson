@@ -5,7 +5,7 @@
     {
       "type": "Feature",
       "properties": {"name":"Бахчисарайское 2","source":"Указ Главы Республики Крым от 27.08.2026 № 276-У","coordinate_system":"WGS-84","outer_boundary_points":666,"inner_boundary_rings":[{"site":1,"points":"667-691"},{"site":4,"points":"700-708"}],"degenerate_inner_sites":[{"site":2,"source_points":"692-695","coordinate":[34.010179,44.736159],"note":"Все четыре исходные точки совпадают; кольцо нулевой площади не включено в Polygon."},{"site":3,"source_points":"696-699","coordinate":[33.998533,44.72318],"note":"Все четыре исходные точки совпадают; кольцо нулевой площади не включено в Polygon."}],"area_thousand_hectares":2.89,"label_points":[[33.958963,44.729354],
-[33.986833,44.729354]],"operator_name":"ООО «Винные истории»"},
+[33.986833,44.729354]],"operator_name":"ООО «Винные истории»","color":"#B00020"},
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -2821,7 +2821,7 @@
     {
       "type": "Feature",
       "properties": {"name":"Бахчисарайское 3","source":"Указ Главы Республики Крым от 27.08.2026 № 276-У","coordinate_system":"WGS-84","outer_boundary_points":656,"inner_boundary_rings":[{"site":1,"points":"657-664"},{"site":2,"points":"665-675"}],"area_thousand_hectares":2.229,"label_points":[[33.845423,44.673243],
-[33.873856,44.673243]],"operator_name":"ООО «Винные истории»"},
+[33.873856,44.673243]],"operator_name":"ООО «Винные истории»","color":"#005BBB"},
       "geometry": {
         "type": "Polygon",
         "coordinates": [
