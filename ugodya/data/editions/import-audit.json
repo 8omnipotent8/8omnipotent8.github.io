@@ -1,0 +1,17 @@
+{
+  "source": "Okhotugodya_oktyabr_2026.kml",
+  "source_sha256": "68cccb20906ee807c08b8b94bdf2ebbcaca490d12a1db7b339f0136d33867912",
+  "placemarks": 275,
+  "features": 275,
+  "polygons": 279,
+  "closed_rings": 0,
+  "groups": {
+    "2026-hunting": 213,
+    "2026-restricted": 32,
+    "2026-additional": 30
+  },
+  "notes": [
+    "No legal status inferred from Tip. Regulations copied from source.",
+    "Area is computed from geometry in the build, not borrowed from 2027."
+  ]
+}
